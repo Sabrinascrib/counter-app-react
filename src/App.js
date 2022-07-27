@@ -16,6 +16,15 @@ function App() {
   const setToZero = () => {
     setCount(0);
   };
+
+  return (
+    <div className="App">
+      <button onClick={increase}>Increase</button>
+      <button onClick={decrease}>Decrease</button>
+      <button onClick={setToZero}>Set to Zero</button>
+      {count}
+    </div>
+  );
 }
 
 export default App;

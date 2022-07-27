@@ -18,11 +18,13 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <button onClick={increase}>Increase</button>
-      <button onClick={decrease}>Decrease</button>
-      <button onClick={setToZero}>Set to Zero</button>
-      {count}
+    <div className="App flex items-center flex-col">
+      <span>{count}</span>
+      <div className="buttons">
+        <button onClick={increase}>+</button>
+        <button onClick={setToZero}>Reset</button>
+        <button onClick={decrease}>-</button>
+      </div>
     </div>
   );
 }

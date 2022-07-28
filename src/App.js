@@ -19,6 +19,9 @@ function App() {
 
   return (
     <div className="App flex bg-white w-96 h-96 items-center flex-col mt-52 mx-auto">
+      <h1 className="text-4xl text-white  p-2 bg-blue-200 font-bold shadow rounded-md">
+        Counter App
+      </h1>
       <span className="mt-9 text-2xl">{count}</span>
       <div className="buttons mt-5">
         <button
